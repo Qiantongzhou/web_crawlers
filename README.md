@@ -1,1 +1,1 @@
-This is a webcrawler that read title and link page using beautiful soup
+This is a webcrawler that read titles and link pages of my website using beautifulsoup 
