@@ -20,8 +20,6 @@ def crawl(start, domain_whitelist, max_pages):
         try:
             #timeout 5 sec
             response = requests.get(url, timeout=5)
-            if "text/html" not in response.headers.get("Content-Type", ""):
-                continue
             raw = BeautifulSoup(response.text, "html.parser")
             #get title
             title = raw.title.string.strip() if raw.title else "No title"
